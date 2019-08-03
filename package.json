@@ -5,11 +5,24 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+
+    "database": "mongod --config /usr/local/etc/mongod.conf",
+    "dev-server": "VUE_CLI_BABEL_TARGET_NODE=true NODE_ENV=development node src/server/www"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^2.0.3",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "mongoose": "^5.5.6",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",

@@ -4,6 +4,18 @@
 ```
 yarn install
 ```
+Generate secret:
+```
+node random.js
+```
+It will print something like *DXkdqTeSF4XsXNLq0BsKION7V2bbM5RoAf3DrbFiFF174YpsDqveGp5Bkv5EZDB4* to the terminal
+
+Create file *.env.local* and write
+
+`SECRET=DXkdqTeSF4XsXNLq0BsKION7V2bbM5RoAf3DrbFiFF174YpsDqveGp5Bkv5EZDB4`
+
+(WITH YOUR RANDOMLY GENERATED SECRET, NOT THIS ONE)
+
 
 ### Compiles and hot-reloads for development
 ```
